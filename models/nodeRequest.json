@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "node" : {
+      "properties": {
+        "id" : { "type" : "string" }
+       },
+      "required": ["id"]
+    }
+  },
+  "properties" : {
+     "nodes" : { "type" : "array", "minItems" : 1, "items": { "type" : "object", "$ref" : "#/definitions/node" }}
+   },
+  "required" : ["nodes"]
+}
