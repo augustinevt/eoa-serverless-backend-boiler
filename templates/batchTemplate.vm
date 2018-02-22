@@ -1,0 +1,4 @@
+{
+  "nodes": $input.json("$.nodes"),
+  "operation": $input.json("$.operation")
+}
