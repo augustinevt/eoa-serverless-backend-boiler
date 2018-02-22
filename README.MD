@@ -1,0 +1,3 @@
+If you add models, you have to turn on the body validation manually
+
+body mapping is cool. I will probably figure how to connect it to a few db things...
