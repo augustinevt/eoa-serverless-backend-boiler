@@ -31,8 +31,11 @@ provider:
   iamRoleStatements: # permissions for all of your functions can be set here
     - Effect: Allow
       Action:
-        - s3:GetObject
-        - s3:PutObject
+        - "*"
+      Resource: "arn:aws:s3:::eoautilstorage"
+    - Effect: Allow
+      Action:
+        - "*"
       Resource: "arn:aws:s3:::eoautilstorage/*"
 
 functions:
